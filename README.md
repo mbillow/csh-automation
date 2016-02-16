@@ -162,3 +162,42 @@ status{
 	"success": true
 }
 ```
+###Light Controls
+#####Light Status
+```
+GET https://control.csh.rit.edu/lounge/lights
+
+token{
+	"id": [shared_token]
+}
+```
+Response:
+
+```
+status{
+	"success": true
+}
+lights{
+	"L1": 0 (off) / 1 (on),
+	"L2": 0 (off) / 1 (on) 
+}
+```
+#####Toggle Lights
+```
+PUT https://control.csh.rit.edu/lounge/lights
+
+token{
+	"id": [shared_token]
+}
+toggle{
+    	"L1": 0 (off) / 1 (on),
+	"L2": 0 (off) / 1 (on) 
+}
+```
+Response:
+
+```
+status{
+	"success": true
+}
+```
