@@ -162,6 +162,22 @@ status{
 	"success": true
 }
 ```
+#####Audio Mute Toggle
+```
+PUT https://control.csh.rit.edu/lounge/receiver/mute
+
+token{
+	"id": [shared_token]
+}
+```
+Response:
+
+```
+status{
+	"success": true
+	"state": 0 (umnuted) / 1 (muted)
+}
+```
 ###Light Controls
 #####Light Status
 ```
@@ -190,7 +206,7 @@ token{
 	"id": [shared_token]
 }
 toggle{
-    	"L1": 0 (off) / 1 (on),
+	"L1": 0 (off) / 1 (on),
 	"L2": 0 (off) / 1 (on) 
 }
 ```
