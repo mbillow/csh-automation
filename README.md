@@ -6,10 +6,6 @@ Query for the status of the Lounge projector. This will return the current power
 
 ```
 GET https://control.csh.rit.edu/lounge/projector
-
-token{
-	"id": [shared_token]
-}
 ```
 Response:
 
@@ -102,10 +98,6 @@ Query for the status of the Lounge receiver. This will return the current power 
 
 ```
 GET https://control.csh.rit.edu/lounge/receiver
-
-token{
-	"id": [shared_token]
-}
 ```
 Response:
 
@@ -182,10 +174,6 @@ status{
 #####Light Status
 ```
 GET https://control.csh.rit.edu/lounge/lights
-
-token{
-	"id": [shared_token]
-}
 ```
 Response:
 
