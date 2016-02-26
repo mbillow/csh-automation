@@ -282,7 +282,7 @@ Response:
 ```
 #####Toggle Radiator
 ```
-PUT https://control.csh.rit.edu/lounge/lights
+PUT https://control.csh.rit.edu/lounge/radiator
 
 {
   "token": {
