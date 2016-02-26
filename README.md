@@ -176,6 +176,28 @@ Response:
   }
 }
 ```
+#####Volume Adjustment
+```
+PUT https://control.csh.rit.edu/lounge/receiver/volume
+
+{
+  "token": {
+    "id": ""
+  },
+  "volume": {
+	"level": 1-127
+  }
+}
+```
+Response:
+
+```
+{
+  "status": {
+    "success": true
+  }
+}
+```
 #####Audio Mute Toggle
 ```
 PUT https://control.csh.rit.edu/lounge/receiver/mute
